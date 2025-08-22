@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markjohn Bongo - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">Markjohn Bongo</div>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Markjohn Bongo</h1>
+                    <p class="role">CPC Student</p>
+                    <p class="tagline">Passionate about discovering new things online. Currently expanding my skills as a BSIT 2B student and exploring endless possibilities on the web.</p>
+                    <a href="https://github.com/TAHIMIKLANGSIMARK" class="cta-button" target="_blank">View My Github</a>
+                </div>
+                <div class="hero-image">
+                    <img src="/img/profile.png" alt="Picture nako uwu">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I’m Mark, a student web developer eager to learn and grow in the world of web design and coding. What started as curiosity about how websites work has grown into a strong passion for building creative and engaging digital experiences.</p>
+                    <p>I’m currently learning HTML, CSS, JavaScript, and design tools like Figma. My goal is to become a full-stack developer capable of turning ideas into functional, well-designed digital experiences. I’m committed to improving my skills and continuing to grow as I explore the world of web development.</p>
+                </div>
+                <div class="skills-section">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">🌐</div>
+                            <div class="skill-name">HTML</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🎨</div>
+                            <div class="skill-name">CSS</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">⚡</div>
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="/img/smk.png" alt="SMK Car Motor Museum" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">SMK Car Motor Museum</h3>
+                        <p class="project-description">Responsive car museum website built with HTML and CSS, featuring category filters and a clean, image-focused layout.</p>
+                        <a href="https://github.com/TAHIMIKLANGSIMARK/SMK-Car-Motor-Museum" class="project-button">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/img/bayrus.png" alt="All About Cars (Bayrus)" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">All About Cars (Bayrus)</h3>
+                        <p class="project-description">Informational Toyota webpage built with HTML and CSS, featuring models, innovations, and trivia.</p>
+                        <a href="https://github.com/TAHIMIKLANGSIMARK/Bayrus" class="project-button">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <div class="contact-links">
+                        <a href="mailto:markjohnbongo514@gmail.com" class="contact-link">
+                            <span>📧</span>
+                            <span>markjohnbongo514@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/TAHIMIKLANGSIMARK" class="contact-link" target="_blank">
+                            <span>🐱</span>
+                            <span>TAHIMIKLANGSIMARK (Github)</span>
+                        </a>
+                    </div>
+                    <p style="color: var(--text-light);">Have a question or want to work together on a web project? You can contact me anytime.</p>
+                </div>
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Markjohn Bongo. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

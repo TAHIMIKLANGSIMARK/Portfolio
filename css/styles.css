@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import url('var.css');
+@import url('base.css');
+@import url('anim.css');
+@import url('util.css');
+@import url('nav.css');
+@import url('hero.css');
+@import url('about.css');
+@import url('projects.css');
+@import url('contact.css');
+@import url('footer.css');
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
+}
+
+.btn-outline:hover {
+    background: var(--primary-blue);
+    color: var(--white);
+}
+
+.section-tight {
+    padding: var(--spacing-2xl) 0;
+}
+
+.section-loose {
+    padding: var(--spacing-4xl) 0 calc(var(--spacing-4xl) + var(--spacing-xl));
+}
+
+@media print {
+    nav,
+    .cta-button,
+    .contact-form,
+    .menu-toggle,
+    footer {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000;
+        background: #fff;
+    }
+    
+    section {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+    
+    .hero,
+    .about,
+    .projects,
+    .contact {
+        page-break-before: auto;
+    }
+    
+    .contact-link[href^="mailto:"]::after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+        color: #666;
+    }
+}
